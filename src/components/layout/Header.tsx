@@ -1,22 +1,13 @@
 'use client'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { ThemeToggle } from './ThemeToggle'
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
-  useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 60)
-    window.addEventListener('scroll', fn, { passive: true })
-    return () => window.removeEventListener('scroll', fn)
-  }, [])
-
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-[var(--background)]/90 backdrop-blur-md border-b border-[var(--border)]' : 'bg-transparent'
-    }`}>
+    <header className="fixed top-0 inset-x-0 z-50 bg-[var(--background)] border-b border-[var(--border)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <Link href="/" className="font-black text-lg tracking-tight hover:text-wi-rose transition-colors">
           WiAcademy
