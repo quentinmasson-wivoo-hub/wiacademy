@@ -1,11 +1,18 @@
+import Image from 'next/image'
 import type { Formateur } from '@/lib/types'
 
 export function FormateurCard({ f }: { f: Formateur }) {
   return (
     <div className="border border-[var(--border)] p-6 rounded-2xl shadow-md hover:shadow-lg hover:border-current/30 hover:-translate-y-0.5 transition-all duration-300 bg-[var(--background)] flex flex-col">
-      <div className="w-16 h-16 flex items-center justify-center font-black text-xl text-white mb-5" style={{ background: f.color }}>
-        {f.initials}
-      </div>
+      {f.photo ? (
+        <div className="w-16 h-16 rounded-full overflow-hidden mb-5 shrink-0">
+          <Image src={f.photo} alt={f.name} width={64} height={64} className="w-full h-full object-cover" />
+        </div>
+      ) : (
+        <div className="w-16 h-16 flex items-center justify-center font-black text-xl text-white mb-5 rounded-full shrink-0" style={{ background: f.color }}>
+          {f.initials}
+        </div>
+      )}
       <h3 className="font-black text-lg mb-2">{f.name}</h3>
       <div className="flex flex-wrap gap-1 mb-4">
         {f.domainLabels.map(d => (

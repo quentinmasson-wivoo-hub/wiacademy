@@ -29,6 +29,7 @@ export interface Formateur {
   formations: string[]
   formationTitles: string[]
   bio?: string
+  photo?: string
   companies?: string[]
   initials: string
   color: string

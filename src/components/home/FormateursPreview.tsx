@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { formateurs } from '@/lib/data/formateurs'
@@ -24,8 +25,14 @@ export function FormateursPreview() {
           {preview.map((f, i) => (
             <AnimatedSection key={f.id} delay={i * 0.1}>
               <div className="border border-white/10 rounded-2xl shadow-lg hover:border-white/30 hover:-translate-y-0.5 transition-all p-6 flex flex-col min-h-[180px]">
-                <div className="w-12 h-12 flex items-center justify-center font-black text-base text-white mb-4"
-                  style={{ background: f.color }}>{f.initials}</div>
+                {f.photo ? (
+                  <div className="w-12 h-12 rounded-full overflow-hidden mb-4 shrink-0">
+                    <Image src={f.photo} alt={f.name} width={48} height={48} className="w-full h-full object-cover" />
+                  </div>
+                ) : (
+                  <div className="w-12 h-12 flex items-center justify-center font-black text-base text-white mb-4 rounded-full shrink-0"
+                    style={{ background: f.color }}>{f.initials}</div>
+                )}
                 <h3 className="font-bold text-base mb-auto">{f.name}</h3>
                 <div className="flex flex-wrap gap-1 mt-3">
                   {f.domainLabels.map(d => (

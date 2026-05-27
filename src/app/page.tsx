@@ -1,5 +1,6 @@
 import { Hero } from '@/components/home/Hero'
 import { Stats } from '@/components/home/Stats'
+import { ClientsBar } from '@/components/home/ClientsBar'
 import { DualEntry } from '@/components/home/DualEntry'
 import { FormationsPreview } from '@/components/home/FormationsPreview'
 import { FormateursPreview } from '@/components/home/FormateursPreview'
@@ -10,6 +11,7 @@ export default function HomePage() {
     <>
       <Hero />
       <Stats />
+      <ClientsBar />
       <DualEntry />
       <FormationsPreview />
       <FormateursPreview />

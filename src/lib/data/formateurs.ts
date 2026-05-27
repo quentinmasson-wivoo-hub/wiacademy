@@ -7,12 +7,14 @@ export const formateurs: Formateur[] = [
     formations: ['pm-1', 'product-marketing', 'culture-agile'],
     formationTitles: ['PM Niveau 1', 'Product Marketing Manager', 'Culture Agile & Produit'],
     initials: 'JD', color: '#f9759e',
+    photo: 'https://cdn.prod.website-files.com/63a1c85b8f7594b373975888/63bed8431a72144924a70017_Jean%20Denouvilliez.jpg',
   },
   {
     id: 'thomas-saouma', slug: 'thomas-saouma', name: 'Thomas Saouma',
     domains: ['product'], domainLabels: ['Product Management'],
     formations: ['pm-1'], formationTitles: ['PM Niveau 1'],
     initials: 'TS', color: '#401fbf',
+    photo: 'https://cdn.prod.website-files.com/63a1c85b8f7594b373975888/677cf972fc3a67a465ae9e74_Thomas%20Saouma.jpg',
   },
   {
     id: 'remi-duflos', slug: 'remi-duflos', name: 'Rémi Duflos',
@@ -25,6 +27,7 @@ export const formateurs: Formateur[] = [
     domains: ['product'], domainLabels: ['Product Management'],
     formations: ['pm-3'], formationTitles: ['Senior PM Niveau 3'],
     initials: 'SN', color: '#451dc7',
+    photo: 'https://cdn.prod.website-files.com/63a1c85b8f7594b373975888/677cf83fa5f11adb3ae0e2bf_Stevens.jpg',
   },
   {
     id: 'benjamin-joly', slug: 'benjamin-joly', name: 'Benjamin Joly',
@@ -43,6 +46,7 @@ export const formateurs: Formateur[] = [
     domains: ['ia'], domainLabels: ['IA & Produit'],
     formations: ['ia-advanced'], formationTitles: ['IA for PM — Advanced'],
     initials: 'SP', color: '#f9759e',
+    photo: 'https://cdn.prod.website-files.com/63a1c85b8f7594b373975888/677cf471f0e474af11d2ef3f_Sarah%20preligent.jpg',
   },
   {
     id: 'lea-nin', slug: 'lea-nin', name: 'Léa Nin',
