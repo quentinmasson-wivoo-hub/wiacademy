@@ -28,7 +28,7 @@ export default function FormationsPage() {
               { label: '4,9/5', note: 'Note moyenne' },
               { label: '2 jours', note: 'Format standard' },
             ].map(s => (
-              <div key={s.label} className="border border-white/20 px-4 py-3">
+              <div key={s.label} className="border border-white/20 rounded-xl px-4 py-3">
                 <div className="font-bold text-sm">{s.label}</div>
                 <div className="text-xs opacity-45 mt-0.5">{s.note}</div>
               </div>
@@ -53,7 +53,7 @@ export default function FormationsPage() {
               Nos experts vous aident à choisir la formation adaptée à vos objectifs et à votre budget.
             </p>
             <a href="https://meetings.hubspot.com/marin-jeronimo" target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-wi-rose text-white font-bold hover:bg-wi-rose/90 transition-colors">
+              className="inline-flex items-center gap-2 px-8 py-4 bg-wi-rose text-white font-bold rounded-xl hover:bg-wi-rose/90 transition-colors">
               Prendre un RDV Découverte →
             </a>
           </AnimatedSection>

@@ -21,7 +21,7 @@ export default function FormateursPage() {
               8 experts terrain qui ont accompagné les plus grandes entreprises tech françaises. Ils pratiquent ce qu&apos;ils enseignent.
             </p>
           </AnimatedSection>
-          <div className="mt-8 p-4 border border-white/15 max-w-xl">
+          <div className="mt-8 p-4 border border-white/15 rounded-xl max-w-xl">
             <p className="text-sm opacity-45">
               ✏️ Biographies complètes en cours de rédaction — revenez bientôt.
             </p>
@@ -47,7 +47,7 @@ export default function FormateursPage() {
               </p>
             </div>
             <a href="mailto:contact@wivoo.fr"
-              className="shrink-0 inline-flex items-center gap-2 px-8 py-4 border-2 border-wi-rose text-wi-rose font-bold hover:bg-wi-rose hover:text-white transition-all">
+              className="shrink-0 inline-flex items-center gap-2 px-8 py-4 border-2 border-wi-rose text-wi-rose font-bold rounded-xl hover:bg-wi-rose hover:text-white transition-all">
               Nous rejoindre →
             </a>
           </AnimatedSection>

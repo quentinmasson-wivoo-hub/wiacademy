@@ -23,10 +23,10 @@ export function FormateursPreview() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {preview.map((f, i) => (
             <AnimatedSection key={f.id} delay={i * 0.1}>
-              <div className="border border-white/10 hover:border-white/30 transition-all p-6 flex flex-col min-h-[180px]">
+              <div className="border border-white/10 rounded-2xl shadow-lg hover:border-white/30 hover:-translate-y-0.5 transition-all p-6 flex flex-col min-h-[180px]">
                 <div className="w-12 h-12 flex items-center justify-center font-black text-base text-white mb-4"
                   style={{ background: f.color }}>{f.initials}</div>
-                <h3 className="font-bold text-sm mb-auto">{f.name}</h3>
+                <h3 className="font-bold text-base mb-auto">{f.name}</h3>
                 <div className="flex flex-wrap gap-1 mt-3">
                   {f.domainLabels.map(d => (
                     <span key={d} className="text-xs px-2 py-0.5 bg-white/10 rounded-full">{d}</span>

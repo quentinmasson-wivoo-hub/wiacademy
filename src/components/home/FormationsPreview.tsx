@@ -36,7 +36,7 @@ export function FormationsPreview() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {pmTrack.map((item, i) => (
               <AnimatedSection key={item.level} delay={i * 0.08}>
-                <div className="relative group p-6 border border-[var(--border)] hover:border-wi-rose/50 hover:bg-wi-rose/5 transition-all bg-[var(--background)]">
+                <div className="relative group p-6 border border-[var(--border)] rounded-2xl shadow-md hover:shadow-lg hover:border-wi-rose/50 hover:bg-wi-rose/5 transition-all bg-[var(--background)]">
                   <div className="w-14 h-14 flex items-center justify-center border-2 border-wi-rose text-wi-rose font-black text-lg mb-5 bg-[var(--background)] relative z-10">
                     {item.level}
                   </div>
@@ -54,7 +54,7 @@ export function FormationsPreview() {
         <AnimatedSection delay={0.3} className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
           {otherTracks.map(t => (
             <Link key={t.label} href="/formations"
-              className="p-4 border border-[var(--border)] hover:border-current/30 transition-colors flex items-center justify-between group">
+              className="p-4 border border-[var(--border)] rounded-xl shadow-sm hover:shadow-md hover:border-current/30 transition-all flex items-center justify-between group">
               <div className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full shrink-0" style={{ background: t.color }} />
                 <span className="font-semibold text-sm">{t.label}</span>

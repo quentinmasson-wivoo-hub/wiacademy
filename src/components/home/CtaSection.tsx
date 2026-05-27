@@ -15,11 +15,11 @@ export function CtaSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://meetings.hubspot.com/marin-jeronimo" target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-wi-rose text-white font-bold hover:bg-wi-rose/90 transition-colors">
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-wi-rose text-white font-bold rounded-xl hover:bg-wi-rose/90 transition-colors">
               Prendre un RDV Découverte
             </a>
             <a href="mailto:contact@wivoo.fr"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-[var(--border)] font-bold hover:border-current/40 transition-colors">
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-[var(--border)] font-bold rounded-xl hover:border-current/40 transition-colors">
               Nous écrire
             </a>
           </div>

@@ -16,7 +16,7 @@ export function Hero() {
 
       <div className="relative z-10 text-center max-w-5xl mx-auto">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 border border-white/20 text-xs font-medium mb-10 backdrop-blur-sm">
+        <div className="inline-flex items-center gap-2 px-4 py-2 border border-white/20 rounded-full text-xs font-medium mb-10 backdrop-blur-sm">
           <span className="w-2 h-2 rounded-full bg-wi-green" style={{ animation: 'pulse 2s infinite' }} />
           Formation certifiée QUALIOPI — Wivoo × Wavestone
         </div>
@@ -39,12 +39,12 @@ export function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="/formations"
-            className="w-full sm:w-auto px-8 py-4 bg-wi-rose text-white font-bold text-base hover:bg-wi-rose/90 transition-colors flex items-center justify-center gap-2 group">
+            className="w-full sm:w-auto px-8 py-4 bg-wi-rose text-white font-bold text-base rounded-xl hover:bg-wi-rose/90 transition-colors flex items-center justify-center gap-2 group">
             Je me forme
             <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
           </a>
           <a href="/formations"
-            className="w-full sm:w-auto px-8 py-4 border border-white/30 text-white font-bold text-base hover:bg-white/10 transition-colors flex items-center justify-center gap-2 group backdrop-blur-sm">
+            className="w-full sm:w-auto px-8 py-4 border border-white/30 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-colors flex items-center justify-center gap-2 group backdrop-blur-sm">
             Je forme mes équipes
             <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
           </a>

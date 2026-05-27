@@ -15,7 +15,7 @@ export function Roadmap() {
       <AnimatedSection className="flex flex-wrap gap-2 mb-14">
         {[{ id: 'all', label: 'Tous les parcours', color: '' }, ...trackIds.map(id => ({ id, label: tracks[id].label, color: tracks[id].color }))].map(t => (
           <button key={t.id} onClick={() => setActive(t.id as TrackId | 'all')}
-            className={`px-4 py-2 text-sm font-bold transition-all border ${
+            className={`px-4 py-2 text-sm font-bold rounded-xl transition-all border ${
               active === t.id
                 ? t.id === 'all' ? 'bg-[var(--foreground)] text-[var(--background)] border-transparent' : 'text-white border-transparent'
                 : 'border-[var(--border)] opacity-60 hover:opacity-100 bg-transparent'
@@ -60,13 +60,13 @@ export function Roadmap() {
                         <div className="w-8 h-8 flex items-center justify-center font-black text-sm text-white mb-4 relative z-10"
                           style={{ background: color }}>{idx + 1}</div>
                       )}
-                      <div className="border border-[var(--border)] p-5 hover:border-current/30 hover:-translate-y-0.5 transition-all bg-[var(--background)]">
+                      <div className="border border-[var(--border)] rounded-2xl shadow-md p-5 hover:shadow-lg hover:border-current/30 hover:-translate-y-0.5 transition-all bg-[var(--background)]">
                         <div className="flex items-start justify-between mb-3">
                           <span className="text-xs font-bold px-2 py-1 text-white" style={{ background: color }}>{f.levelLabel}</span>
                           {f.rating && <span className="text-xs opacity-40">⭐ {f.rating.toFixed(1)}</span>}
                         </div>
                         <h4 className="font-black text-base mb-2">{f.title}</h4>
-                        <p className="text-xs opacity-45 mb-4 leading-relaxed line-clamp-2">{f.description}</p>
+                        <p className="text-sm opacity-45 mb-4 leading-relaxed line-clamp-2">{f.description}</p>
                         <div className="flex flex-wrap gap-1 mb-4">
                           {f.tags.slice(0, 3).map(tag => (
                             <span key={tag} className="text-xs px-2 py-0.5 border border-[var(--border)] opacity-60">{tag}</span>

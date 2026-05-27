@@ -15,10 +15,10 @@ export function DualEntry() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <AnimatedSection delay={0.1} direction="left">
-            <div className="group p-8 md:p-10 border border-[var(--border)] hover:border-wi-rose/50 transition-all duration-300 hover:bg-wi-rose/5 h-full">
+            <div className="group p-8 md:p-10 border border-[var(--border)] rounded-2xl shadow-md hover:shadow-xl hover:border-wi-rose/50 transition-all duration-300 hover:bg-wi-rose/5 h-full">
               <div className="text-3xl mb-5">👤</div>
               <h3 className="text-2xl md:text-3xl font-black mb-3">Je me forme</h3>
-              <p className="opacity-60 leading-relaxed mb-6 text-sm">
+              <p className="opacity-60 leading-relaxed mb-6 text-base">
                 PM, Product Lead, Designer, Data Scientist — développez vos compétences avec des experts qui pratiquent ce qu&apos;ils enseignent.
               </p>
               <ul className="space-y-2 mb-8">
@@ -35,10 +35,10 @@ export function DualEntry() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2} direction="right">
-            <div className="group p-8 md:p-10 bg-ws-dark text-white hover:bg-ws-violet/90 transition-all duration-300 h-full">
+            <div className="group p-8 md:p-10 bg-ws-dark text-white rounded-2xl shadow-lg hover:shadow-2xl hover:bg-ws-violet/90 transition-all duration-300 h-full">
               <div className="text-3xl mb-5">🏢</div>
               <h3 className="text-2xl md:text-3xl font-black mb-3">Je forme mes équipes</h3>
-              <p className="opacity-65 leading-relaxed mb-6 text-sm">
+              <p className="opacity-65 leading-relaxed mb-6 text-base">
                 DRH, L&D, Managers — montez en compétences toute votre organisation produit avec des formations intra sur-mesure.
               </p>
               <ul className="space-y-2 mb-8">
