@@ -48,7 +48,7 @@ export function DualEntry() {
                   </li>
                 ))}
               </ul>
-              <a href="https://calendly.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://meetings.hubspot.com/marin-jeronimo" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 font-bold text-wi-green group-hover:gap-3 transition-all">
                 Demander un devis <span>→</span>
               </a>

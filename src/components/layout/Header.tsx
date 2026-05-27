@@ -20,7 +20,7 @@ export function Header() {
 
         <div className="flex items-center gap-1">
           <ThemeToggle />
-          <a href="https://calendly.com" target="_blank" rel="noopener noreferrer"
+          <a href="https://meetings.hubspot.com/marin-jeronimo" target="_blank" rel="noopener noreferrer"
             className="hidden md:flex items-center gap-1.5 px-4 py-2 bg-wi-rose text-white text-sm font-semibold hover:bg-wi-rose/90 transition-colors">
             Prendre RDV
           </a>
@@ -37,7 +37,7 @@ export function Header() {
         <div className="md:hidden bg-[var(--background)] border-t border-[var(--border)] px-4 py-6 flex flex-col gap-4">
           <Link href="/formations" onClick={() => setOpen(false)} className="text-lg font-bold">Formations</Link>
           <Link href="/formateurs" onClick={() => setOpen(false)} className="text-lg font-bold">Formateurs</Link>
-          <a href="https://calendly.com" target="_blank" rel="noopener noreferrer"
+          <a href="https://meetings.hubspot.com/marin-jeronimo" target="_blank" rel="noopener noreferrer"
             className="mt-2 inline-flex items-center justify-center px-6 py-3 bg-wi-rose text-white font-semibold">
             Prendre RDV
           </a>

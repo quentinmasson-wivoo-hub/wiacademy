@@ -52,7 +52,7 @@ export default function FormationsPage() {
             <p className="opacity-55 mb-8 max-w-xl mx-auto">
               Nos experts vous aident à choisir la formation adaptée à vos objectifs et à votre budget.
             </p>
-            <a href="https://calendly.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://meetings.hubspot.com/marin-jeronimo" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-wi-rose text-white font-bold hover:bg-wi-rose/90 transition-colors">
               Prendre un RDV Découverte →
             </a>

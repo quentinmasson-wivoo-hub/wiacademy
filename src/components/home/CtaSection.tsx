@@ -14,7 +14,7 @@ export function CtaSection() {
             Échangez avec notre équipe pour trouver la formation qui correspond à vos objectifs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://meetings.hubspot.com/marin-jeronimo" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-wi-rose text-white font-bold hover:bg-wi-rose/90 transition-colors">
               Prendre un RDV Découverte
             </a>
