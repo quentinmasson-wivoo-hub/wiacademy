@@ -59,13 +59,24 @@ export function ChatWidget() {
         {/* Header */}
         <div className="flex items-center justify-between px-4 py-3 bg-[#401fbf] text-white">
           <span className="font-semibold text-sm">Trouver ma formation</span>
-          <button
-            onClick={() => setIsOpen(false)}
-            className="opacity-70 hover:opacity-100 transition-opacity text-xl leading-none mt-[-2px]"
-            aria-label="Fermer"
-          >
-            ×
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="opacity-70 hover:opacity-100 transition-opacity"
+              aria-label="Réduire"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <button
+              onClick={() => { handleReset(); setIsOpen(false) }}
+              className="opacity-70 hover:opacity-100 transition-opacity text-xl leading-none mt-[-2px]"
+              aria-label="Fermer et réinitialiser"
+            >
+              ×
+            </button>
+          </div>
         </div>
 
         {/* Body */}
